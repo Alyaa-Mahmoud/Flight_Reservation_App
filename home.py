@@ -1,5 +1,6 @@
 from tkinter import *
 from PIL import Image,ImageTk
+import os
 
 class HomePage(Frame):
     def __init__(self, master,Book_Func,Res_Func,book_page):
@@ -25,7 +26,8 @@ class HomePage(Frame):
         btn2 = Button(frame2, text="View Reservations", width=45, height=2, relief="flat", bg="#427AA1", fg="white",
                       font=('Arial', 10, 'bold'),command=lambda:Res_Func())
 
-        photo1 = Image.open("images/online-booking.png")
+        image_path1 = os.path.join(os.path.dirname(__file__), "images", "online-booking.png")
+        photo1 = Image.open(image_path1)
         resized_image1 = photo1.resize((70, 70), Image.Resampling.LANCZOS)
         converted_image1 = ImageTk.PhotoImage(resized_image1)
 
@@ -33,7 +35,8 @@ class HomePage(Frame):
         img1_lbl.image = converted_image1
         img1_lbl.place(x=160, y=5)
 
-        photo2 = Image.open("images/app.png")
+        image_path2 = os.path.join(os.path.dirname(__file__), "images", "app.png")
+        photo2 = Image.open(image_path2)
         resized_image2 = photo2.resize((70, 70), Image.Resampling.LANCZOS)
         converted_image2 = ImageTk.PhotoImage(resized_image2)
 
