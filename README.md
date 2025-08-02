@@ -71,6 +71,11 @@ Include the images/ folder so image assets (like images/airplane.png) are bundle
 After the build completes, your executable will be located in the following folder:  
 dist/main.exe  
 
-You can now share or run this .exe file on any Windows machine without needing Python installed.
+You can now share or run this .exe file on any Windows machine without needing Python installed.  
+
+### 🧩 Download
+
+You can download the latest Windows executable from the [Releases page](https://github.com/Alyaa-Mahmoud/Flight_Reservation_App/releases/tag/v1.0.0).
+
 
 
