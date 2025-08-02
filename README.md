@@ -40,7 +40,7 @@ A user-friendly desktop GUI application for booking and managing flight reservat
 
 ## 📦 Required Packages
 
-Install the required Python packages using pip:
+Install the required Python packages using pip:  
 pip install babel==2.17.0  
 pip install pillow==11.3.0  
 pip install pip==25.1.1  
