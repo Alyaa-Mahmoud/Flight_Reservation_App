@@ -41,12 +41,12 @@ A user-friendly desktop GUI application for booking and managing flight reservat
 ## 📦 Required Packages
 
 Install the required Python packages using pip:
-pip install babel==2.17.0
-pip install pillow==11.3.0
-pip install pip==25.1.1
-pip install tkcalendar==1.6.1
+pip install babel==2.17.0  
+pip install pillow==11.3.0  
+pip install pip==25.1.1  
+pip install tkcalendar==1.6.1  
 
-or all at once using 
+or all at once using  
 pip install -r requirements.txt
 
 
@@ -60,16 +60,16 @@ You can package the application as a standalone Windows executable using **PyIns
 pip install pyinstaller
 
 #### 2. Build the Executable
-From the root directory of your project, run:
+From the root directory of your project, run:  
 pyinstaller --onefile --add-data "images:images" main.py
 
-This command tells PyInstaller to:
-Package everything into one .exe file
-Include the images/ folder so image assets (like images/airplane.png) are bundled correctly
+This command tells PyInstaller to:  
+Package everything into one .exe file  
+Include the images/ folder so image assets (like images/airplane.png) are bundled correctly  
 
 #### 3. Locate the Executable
-After the build completes, your executable will be located in the following folder:
-dist/main.exe
+After the build completes, your executable will be located in the following folder:  
+dist/main.exe  
 
 You can now share or run this .exe file on any Windows machine without needing Python installed.
 
