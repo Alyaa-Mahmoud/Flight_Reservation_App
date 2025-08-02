@@ -40,49 +40,6 @@ A user-friendly desktop GUI application for booking and managing flight reservat
 
 ## 📦 Required Packages
 
-# ✈️ Flight Reservation App
-
-A simple desktop flight reservation system built with **Python** and **Tkinter**.
-
-This GUI application allows users to:
-- Book a flight
-- View all reservations
-- Edit or delete any reservation
-- Search for a reservation by flight number
-
----
-
-## 🧩 Features
-
-### 🏠 Home Page
-- Opens by default
-- Contains two main buttons:
-  - `Book Flight`
-  - `View Reservations`
-
-### 📄 Book Flight Form
-- Fields:
-  - Name
-  - Flight Number
-  - Departure
-  - Destination
-  - Date
-  - Seat
-- Buttons:
-  - `Book Flight` → saves reservation
-  - `Cancel` → cancels form and returns to Home Page
-
-### 📋 View Reservations
-- Displays all booked reservations in a table
-- Each entry includes:
-  - ✏️ `Edit` → opens a form to update data
-  - 🗑️ `Delete` → removes the selected reservation
-- Includes a search field to filter reservations by flight number
-
----
-
-## 🛠️ Requirements
-
 Install the required Python packages using pip:
 pip install babel==2.17.0
 pip install pillow==11.3.0
