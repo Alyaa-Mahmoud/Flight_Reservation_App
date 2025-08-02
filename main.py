@@ -5,6 +5,7 @@ from PIL import Image,ImageTk
 from home import HomePage
 from booking import BookingPage
 from edit_reservation import EditPage
+import os
 
 root = Tk()
 root.geometry("600x600")
@@ -21,7 +22,8 @@ def switch(indicator_lb,page):
 
 options_frame = Frame(root,bg="#427AA1")
 
-photo = Image.open("images/airplane.png")
+image_path = os.path.join(os.path.dirname(__file__), "images", "airplane.png")
+photo = Image.open(image_path)
 resized_image = photo.resize((40,40), Image.Resampling.LANCZOS)
 converted_image = ImageTk.PhotoImage(resized_image)
 
